@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecte Seus Filhos a Deus: 100 Desenhos Bíblicos para Colorir (PDF)</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%2328a745%22><path d=%22M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z%22/></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* ==================================== */
+        /* 1. Variáveis CSS e Reset Global      */
+        /* ==================================== */
+        :root {
+            --cor-primaria: #2c7be0;     /* Azul principal (Fé, Confiança) */
+            --cor-secundaria: #ffc107;   /* Amarelo de destaque (Energia, CTA) */
+            --cor-urgencia: #dc3545;     /* Vermelho (Oferta, Destaque Risco Zero) */
+            --cor-sucesso: #28a745;       /* VERDE (Sucesso, CTA) - ADICIONADO */
+            --cor-texto-escuro: #343a40; /* Texto principal escuro */
+            --cor-texto-claro: #6c757d;  /* Texto secundário/parágrafos */
+            --cor-fundo-claro: #f8f9fa;  /* Fundo cinza bem claro */
+            --cor-fundo-branco: #ffffff; /* Fundo branco puro */
+            --sombra-leve: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+            --borda-arredondada: 0.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth; /* Rolagem suave para âncoras */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--cor-texto-escuro);
+            background-color: var(--cor-fundo-branco);
+            overflow-x: hidden; /* Garante que não haverá rolagem horizontal */
+        }
+
+        .container {
+            max-width: 1200px; /* Um pouco mais largo para desktop */
+            margin: 0 auto;
+            padding: 0 1.5rem; /* Padding responsivo */
+        }
+
+        /* Títulos */
+        h1, h2, h3, h4 {
+            color: var(--cor-texto-escuro);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        /* H1 AJUSTADO: TAMANHO MENOR EM DESKTOP */
+        h1 { font-size: 3rem; font-weight: 800; color: var(--cor-fundo-branco); }
+        h2 { font-size: 2.5rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 2.5rem;}
+        h3 { font-size: 1.75rem; font-weight: 600; color: var(--cor-primaria); margin-bottom: 0.75rem;}
+        h4 { font-size: 1.25rem; font-weight: 600; color: var(--cor-texto-escuro); }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--cor-texto-claro);
+            margin-bottom: 1rem;
+        }
+
+        section {
+            padding: 5rem 0; /* Padding padrão para seções */
+            text-align: center;
+        }
+
+        /* Botões CTA */
+        .btn-cta {
+            display: inline-block; /* Permite centralizar com text-align */
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto-escuro);
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0.5rem 1.5rem rgba(255, 193, 7, 0.4);
+            border: none;
+            cursor: pointer;
+            margin-top: 1.5rem;
+        }
+
+        .btn-cta:hover {
+            background-color: #e0ac00;
+            transform: translateY(-3px);
+            box-shadow: 0 0.75rem 2rem rgba(255, 193, 7, 0.6);
+        }
+        
+        /* BOTÕES VERDES (para a Oferta Final) */
+        .btn-danger {
+            background-color: var(--cor-sucesso); /* Alterado de --cor-urgencia */
+            color: var(--cor-fundo-branco);
+            box-shadow: 0 0.5rem 1.5rem rgba(40, 167, 69, 0.4); /* Cor da sombra alterada */
+        }
+        .btn-danger:hover {
+            background-color: #218838; /* Verde mais escuro */
+            box-shadow: 0 0.75rem 2rem rgba(40, 167, 69, 0.6); /* Cor da sombra alterada */
+        }
+
+        /* ==================================== */
+        /* 2. Seção Hero (Primeiro Dobrador)    */
+        /* ==================================== */
+        #hero {
+            background-color: var(--cor-primaria);
+            color: var(--cor-fundo-branco);
+            padding: 7rem 0; /* Ajuste para espaçamento */
+            position: relative;
+            overflow: hidden; /* Esconde elementos que podem vazar */
+        }
+        
+        /* Adiciona um padrão de fundo sutil para dinamismo */
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column; /* Padrão mobile-first */
+            align-items: center;
+            gap: 2.5rem;
+            text-align: center;
+        }
+
+        .hero-text {
+            max-width: 600px; /* Limita largura do texto */
+        }
+
+        .hero-text h1 {
+            font-size: 3rem; /* TAMANHO AJUSTADO */
+            margin-bottom: 1rem;
+        }
+        .hero-text p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        .hero-text .oferta-destaque {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--cor-secundaria);
+            margin-top: 1rem;
+        }
+
+        .hero-image {
+            position: relative; /* Para a sombra da imagem */
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--borda-arredondada);
+            box-shadow: var(--sombra-leve);
+            border: 5px solid var(--cor-secundaria); /* Borda amarela */
+        }
+
+        /* ==================================== */
+        /* 12. Animações Scroll Reveal          */
+        /* ==================================== */
+        
+        /* ANIMAÇÃO DE "SUBIR" (transform) REMOVIDA. SÓ "DESVANECER" (opacity) AGORA. */
+        .reveal {
+            opacity: 0;
+            transition: opacity 0.8s ease-out; 
+        }
+        .reveal.active {
+            opacity: 1;
+        }
+        
+        /* Atrasos para elementos em grid/sequência */
+        .beneficios-grid .reveal { transition-delay: 0.1s; }
+        .beneficios-grid .beneficio-card:nth-child(2).reveal { transition-delay: 0.2s; }
+        .beneficios-grid .beneficio-card:nth-child(3).reveal { transition-delay: 0.3s; }
+        .modulos-grid .reveal { transition-delay: 0.1s; }
+        .modulos-grid .modulo-card:nth-child(2).reveal { transition-delay: 0.2s; }
+        .modulos-grid .modulo-card:nth-child(3).reveal { transition-delay: 0.3s; }
+        
+        /* ==================================== */
+        /* 13. Media Queries (Responsividade)   */
+        /* ==================================== */
+        @media (min-width: 768px) {
+            .hero-content {
+                flex-direction: row; /* Volta para lado a lado em telas maiores */
+                text-align: left;
+            }
+            .hero-text {
+                text-align: left; /* Garante que o texto hero fique à esquerda */
+            }
+            .hero-text h1 {
+                font-size: 3.5rem; /* Título maior no desktop */
+            }
+            .hero-image {
+                order: 2; /* Imagem à direita */
+            }
+            .hero-text {
+                order: 1; /* Texto à esquerda */
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            h1 { font-size: 2.2rem; } /* H1 MUITO MENOR EM MOBILE */
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+            p { font-size: 1rem; }
+            .btn-cta { font-size: 1.1rem; padding: 1rem 2rem; }
+            section { padding: 3rem 0; }
+            .hero-content { padding: 0 1rem; } /* Mais padding interno no mobile hero */
+            .hero-image img { max-width: 90%; } /* Imagem um pouco menor */
+            .solucao-destaque { padding: 1.5rem; font-size: 1.1rem; }
+            .bonus-box, .preco-box, .garantia-box { padding: 1.5rem; }
+            .bonus-item { flex-direction: column; align-items: flex-start; }
+            .bonus-item .valor-original { margin-right: 0; margin-top: 0.25rem; }
+            .bonus-item .valor-gratis { margin-top: 0.25rem; }
+            .preco-box .preco-por { font-size: 2.8rem; }
+            /* Ajuste para o blur da garantia em mobile */
+            #garantia { padding: 3rem 0; }
+        }
+        
+        /* CÓDIGO DO RESTO DO CSS ANTERIOR (Não alterado) */
+        
+        #problema-solucao { background-color: var(--cor-fundo-branco); padding-bottom: 2rem; }
+        #problema-solucao h2 { margin-bottom: 2rem; }
+        .problema-texto, .solucao-destaque { max-width: 800px; margin: 0 auto; }
+        .solucao-destaque { background-color: var(--cor-fundo-claro); color: var(--cor-primaria); padding: 2rem; border-radius: var(--borda-arredondada); font-size: 1.3rem; font-weight: 600; margin-top: 2rem; box-shadow: var(--sombra-leve); }
+        #beneficios { background-color: var(--cor-fundo-claro); }
+        .beneficios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .beneficio-card { background-color: var(--cor-fundo-branco); padding: 2rem; border-radius: var(--borda-arredondada); box-shadow: var(--sombra-leve); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: left; }
+        .beneficio-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+        .beneficio-card i { font-size: 2.5rem; color: var(--cor-secundaria); margin-bottom: 1rem; display: block; }
+        .beneficio-card h3 { color: var(--cor-primaria); font-size: 1.4rem; }
+        .beneficio-card p { font-size: 1rem; color: var(--cor-texto-claro); }
+        #conteudo { background-color: var(--cor-fundo-branco); }
+        .modulos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .modulo-card { background-color: var(--cor-fundo-claro); padding: 2rem; border-radius: var(--borda-arredondada); box-shadow: var(--sombra-leve); border-top: 4px solid var(--cor-primaria); }
+        .modulo-card i { font-size: 2.2rem; color: var(--cor-primaria); margin-bottom: 1rem; }
+        .modulo-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .modulo-card p { font-size: 0.95rem; }
+        #bonus { background-color: var(--cor-primaria); color: var(--cor-fundo-branco); }
+        #bonus h2 { color: var(--cor-secundaria); }
+        #bonus p { color: rgba(255, 255, 255, 0.9); max-width: 800px; margin: 0 auto 2rem auto; }
+        .bonus-box { background-color: var(--cor-fundo-branco); color: var(--cor-texto-escuro); padding: 2.5rem; border-radius: var(--borda-arredondada); box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); max-width: 800px; margin: 3rem auto; text-align: left; }
+        .bonus-item { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px dashed var(--cor-fundo-claro); margin-bottom: 0.5rem; }
+        .bonus-item:last-child { border-bottom: none; margin-bottom: 0; }
+        .bonus-item .nome { font-weight: 600; font-size: 1.1rem; color: var(--cor-texto-escuro); flex-grow: 1; }
+        .bonus-item .valor-original { font-weight: 500; color: var(--cor-urgencia); text-decoration: line-through; margin-right: 1rem; }
+        .bonus-item .valor-gratis { background-color: var(--cor-primaria); color: var(--cor-fundo-branco); padding: 0.3rem 0.7rem; border-radius: var(--borda-arredondada); font-weight: 700; font-size: 0.9rem; }
+        .bonus-total { text-align: center; font-size: 1.5rem; font-weight: 700; margin-top: 1.5rem; color: var(--cor-primaria); }
+        .bonus-total strong { color: var(--cor-urgencia); }
+        #depoimentos { background-color: var(--cor-fundo-claro); }
+        .depoimento-card { background-color: var(--cor-fundo-branco); padding: 2rem; border-radius: var(--borda-arredondada); box-shadow: var(--sombra-leve); max-width: 700px; margin: 3rem auto 0 auto; text-align: left; border-left: 5px solid var(--cor-secundaria); font-style: italic; }
+        .depoimento-card p:last-child { font-style: normal; font-weight: 600; text-align: right; margin-top: 1rem; color: var(--cor-texto-escuro); }
+        #oferta-final { background-color: var(--cor-fundo-branco); padding-bottom: 2rem; }
+        .preco-box { max-width: 450px; margin: 3rem auto; background-color: var(--cor-fundo-claro); padding: 2.5rem; border-radius: var(--borda-arredondada); box-shadow: var(--sombra-leve); border: 2px dashed var(--cor-primaria); }
+        .preco-box .preco-de { text-decoration: line-through; font-size: 1.2rem; color: var(--cor-texto-claro); }
+        .preco-box .preco-por { font-size: 3.5rem; font-weight: 800; color: var(--cor-urgencia); margin: 0.5rem 0 1rem 0; display: block; }
+        .preco-box .parcelamento { font-size: 1.1rem; font-weight: 600; color: var(--cor-texto-escuro); margin-bottom: 1rem; }
+        .preco-box .bonus-gratis-texto { font-size: 1.4rem; font-weight: 700; color: var(--cor-primaria); margin-bottom: 1.5rem; }
+        .acesso-imediato { font-size: 0.9rem; font-weight: 600; color: var(--cor-texto-claro); margin-top: 1rem; }
+        #garantia { background: linear-gradient(135deg, var(--cor-fundo-claro) 0%, #e9f0fa 100%); padding: 5rem 0; position: relative; overflow: hidden; }
+        #garantia h2 { color: var(--cor-primaria); }
+        .garantia-box { background-color: rgba(255, 255, 255, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 2.5rem; border-radius: var(--borda-arredondada); box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); max-width: 700px; margin: 3rem auto; position: relative; z-index: 1; }
+        .garantia-box::before { content: '\f53a'; font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 6rem; color: rgba(44, 123, 224, 0.1); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; }
+        .garantia-box p { font-size: 1.1rem; margin-bottom: 0.75rem; }
+        .garantia-box strong { color: var(--cor-primaria); }
+        #faq { background-color: var(--cor-fundo-branco); border-bottom: none; }
+        .faq-wrapper { max-width: 800px; margin: 0 auto; text-align: left; }
+        .faq-item { margin-bottom: 1rem; border: 1px solid #dee2e6; border-radius: var(--borda-arredondada); overflow: hidden; }
+        .faq-pergunta { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background-color: var(--cor-fundo-claro); color: var(--cor-primaria); font-weight: 600; cursor: pointer; font-size: 1.1rem; transition: background-color 0.3s ease; }
+        .faq-pergunta:hover { background-color: #e9ecef; }
+        .faq-pergunta i { transition: transform 0.3s ease; color: var(--cor-primaria); }
+        .faq-resposta { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.4s ease-out; background-color: var(--cor-fundo-branco); padding: 0 1.5rem; }
+        .faq-resposta p { padding: 1rem 0; margin: 0; color: var(--cor-texto-claro); font-size: 1rem; }
+        .faq-item.active .faq-resposta { max-height: 500px; padding: 0 1.5rem; }
+        .faq-item.active .faq-pergunta i { transform: rotate(180deg); }
+        footer { background-color: var(--cor-texto-escuro); color: rgba(255, 255, 255, 0.8); padding: 2.5rem 0; font-size: 0.9rem; }
+        footer a { color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: color 0.3s ease; }
+        footer a:hover { color: var(--cor-secundaria); }
+    </style>
+</head>
+<body>
+
+    <header id="hero" class="reveal active">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>[REVELADO] O Segredo para Conectar Seus Filhos a Deus... Longe das Telas!</h1>
+                <p>Acabe com o tédio em casa e inicie uma **Jornada de Fé Inesquecível** com o PDF de **100 Desenhos Bíblicos** que transformam o aprendizado em brincadeira.</p>
+                <a href="#oferta-final" class="btn-cta">TRANSFORME A FÉ EM DIVERSÃO! GARANTA O SEU AGORA!</a>
+                <p class="oferta-destaque">*Oferta Exclusiva de Lançamento! Leve TUDO por apenas **12x de R$ 2,99!***</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/450x350?text=Mockup+do+PDF+de+Desenhos" alt="Mockup do Livro Digital de Desenhos Religiosos para Colorir">
+            </div>
+        </div>
+    </header>
+
+    <section id="problema-solucao" class="reveal">
+        <div class="container">
+            <h2>Seus filhos estão crescendo... e a fé não pode esperar.</h2>
+            <div class="problema-texto">
+                <p>Você se sente culpado por não ter **tempo suficiente** para ensinar os valores sagrados? Seus filhos pedem o celular o tempo todo, e você sente que estão **perdendo a conexão** com o que realmente importa?</p>
+                <p><strong>PARE TUDO.</strong> Este não é apenas um livro de colorir.</p>
+            </div>
+            <div class="solucao-destaque reveal">
+                É a **solução imediata** para preencher o tempo livre deles com propósito e, finalmente, plantar a semente da fé no coração de forma natural, divertida e **sem brigas por telas**.
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="reveal">
+        <div class="container">
+            <h2>Por que Nosso PDF é o ÚNICO que Transmite a Fé com Alegria?</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card reveal">
+                    <i class="fas fa-magic"></i>
+                    <h3>Qualidade Artística Impecável</h3>
+                    <p>Desenhos criados por artistas especializados em conteúdo infantil, com traços grossos, fáceis de colorir e visualmente encantadores.</p>
+                </div>
+                <div class="beneficio-card reveal">
+                    <i class="fas fa-star-of-life"></i>
+                    <h3>Conteúdo 100% Edificante</h3>
+                    <p>Cada imagem foi revisada para garantir a precisão bíblica e a transmissão de valores positivos, sem distorções ou conteúdos inapropriados.</p>
+                </div>
+                <div class="beneficio-card reveal">
+                    <i class="fas fa-print"></i>
+                    <h3>Liberdade de Impressão Ilimitada</h3>
+                    <p>Arquivo em PDF de alta resolução, pronto para imprimir em casa quantas vezes quiser, para uso em família ou na catequese.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conteudo" class="reveal">
+        <div class="container">
+            <h2>O que Seu Filho Aprenderá com a Coleção Principal (100 Desenhos):</h2>
+            <div class="modulos-grid">
+                <div class="modulo-card reveal">
+                    <i class="fas fa-dove"></i>
+                    <h3>Módulo 1: Histórias do Gênesis</h3>
+                    <p>Criação do Mundo, Adão e Eva, A Arca de Noé, e a Torre de Babel.</p>
+                </div>
+                <div class="modulo-card reveal">
+                    <i class="fas fa-cross"></i>
+                    <h3>Módulo 2: A Vida de Jesus</h3>
+                    <p>Nascimento, Milagres, Ensinamentos e a Páscoa (Ressurreição).</p>
+                </div>
+                <div class="modulo-card reveal">
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Módulo 3: Santos e Orações</h3>
+                    <p>Anjos da Guarda, Santos Populares e os principais símbolos da fé.</p>
+                </div>
+            </div>
+            <a href="#oferta-final" class="btn-cta reveal">EU QUERO ESTES DESENHOS E MAIS OS BÔNUS EXCLUSIVOS!</a>
+        </div>
+    </section>
+
+    <section id="bonus" class="reveal">
+        <div class="container">
+            <h2>🎁 BÔNUS EXCLUSIVOS PARA AS PRIMEIRAS 50 FAMÍLIAS!</h2>
+            <p>Você não vai levar apenas 100 desenhos, mas sim um **KIT COMPLETO** de evangelização infantil para aprofundar a fé e a diversão!</p>
+            
+            <div class="bonus-box reveal">
+                <div class="bonus-item">
+                    <span class="nome">BÔNUS 1: +150 Histórias Bíblicas para Crianças (PDF Narrado)</span>
+                    <span class="valor-original">R$ 40,00</span>
+                    <span class="valor-gratis">GRÁTIS!</span>
+                </div>
+                <div class="bonus-item">
+                    <span class="nome">BÔNUS 2: 50 Quebra-Cabeças Bíblicos (Para Imprimir e Montar)</span>
+                    <span class="valor-original">R$ 25,00</span>
+                    <span class="valor-gratis">GRÁTIS!</span>
+                </div>
+                <div class="bonus-item">
+                    <span class="nome">BÔNUS 3: Certificado de "Super-Herói da Fé" (Para Recompensa)</span>
+                    <span class="valor-original">R$ 10,00</span>
+                    <span class="valor-gratis">GRÁTIS!</span>
+                </div>
+                
+                <div class="bonus-total">
+                    Valor Total dos Bônus: <strong>R$ 75,00</strong>
+                </div>
+            </div>
+            
+            <p style="font-size: 1.5rem; font-weight: 700; color: var(--cor-secundaria);">LEVE TUDO ISSO POR UM PREÇO IRRECUSÁVEL!</p>
+            <a href="#oferta-final" class="btn-cta reveal">GARANTIR MEUS BÔNUS AGORA!</a>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="reveal">
+        <div class="container">
+            <h2>Quem já usou, recomenda:</h2>
+            <div class="depoimento-card reveal">
+                <p>"Meu filho de 5 anos amou! Ele passa horas colorindo o 'Arca de Noé' e agora me pergunta sobre a história. É a melhor forma de educar na fé que encontrei! Recomendo a todos os pais."</p>
+                <p>— **Ana Lúcia C.**, Mãe e Professora</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta-final" class="reveal">
+        <div class="container">
+            <h2>Não deixe que seus filhos percam esta oportunidade única!</h2>
+            <div class="preco-box reveal">
+                <p class="preco-de">De R$ 49,90</p>
+                <span class="preco-por">Por Apenas R$ 29,90</span>
+                <p class="parcelamento">ou em **12x de R$ 2,99** no cartão</p>
+                <p class="bonus-gratis-texto">+ R$ 75,00 em BÔNUS GRÁTIS!</p>
+                
+                <a href="https://seu-link-de-checkout.com" class="btn-cta btn-danger reveal">QUERO O PACOTE COMPLETO + BÔNUS AGORA!</a>
+                
+                <p class="acesso-imediato">**Acesso Imediato** após a confirmação do pagamento. Comece a colorir em minutos!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="garantia" class="reveal">
+        <div class="container">
+            <h2>Risco Zero para Sua Família!</h2>
+            <div class="garantia-box reveal">
+                <p>Temos tanta certeza da qualidade e do impacto positivo que oferecemos uma **Garantia Incondicional de 7 Dias!**</p>
+                <p>Compre agora, receba em segundos, imprima 5 desenhos. Se em 7 dias você não sentir que seu filho se conectou à fé de forma divertida e significativa, nós devolvemos **cada centavo**. **Seu único risco é não tentar.**</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Dúvidas Rápidas (FAQ)</h2>
+            <div class="faq-wrapper">
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <span>O que acontece depois que eu clico em Comprar?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Imediatismo! Você receberá o link para baixar o PDF completo por e-mail em **apenas 2 minutos**, pronto para o seu primeiro momento de colorir e evangelizar.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <span>É um livro físico ou digital?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>É um produto 100% digital, em formato PDF de altíssima resolução. Você compra **hoje**, tem o produto **para sempre**, e pode imprimir apenas o que precisa, quantas vezes quiser, economizando papel e espaço.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <span>Posso usar na Catequese ou Escola Dominical?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim! Muitos professores, catequistas e líderes de ministério infantil já utilizam nossos desenhos. É um recurso completo e versátil para levar os ensinamentos da Bíblia para grupos, de forma envolvente e divertida.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <span>Preciso de algum programa especial para abrir o PDF?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Não! Qualquer leitor de PDF básico (como o Adobe Acrobat Reader, que é gratuito e geralmente já vem instalado) será suficiente. É muito simples de usar!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Seu Produto/Empresa]. Todos os direitos reservados. | <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- CORREÇÃO E LÓGICA DO FAQ (Acordeão) ---
+            const faqPerguntas = document.querySelectorAll('.faq-pergunta');
+            
+            faqPerguntas.forEach(pergunta => {
+                pergunta.addEventListener('click', () => {
+                    const item = pergunta.closest('.faq-item');
+                    
+                    // Fecha todos os outros itens abertos
+                    document.querySelectorAll('.faq-item.active').forEach(itemAtivo => {
+                       if (itemAtivo !== item) {
+                           itemAtivo.classList.remove('active');
+                       }
+                    });
+
+                    // Abre ou fecha o item clicado
+                    item.classList.toggle('active');
+                });
+            });
+
+            // --- Lógica de Scroll Reveal (Desvanecer) ---
+            const elementsToReveal = document.querySelectorAll('.reveal');
+            const revealThreshold = 0.85; /* Ajuste para quão cedo o elemento aparece */
+
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                elementsToReveal.forEach(element => {
+                    // Não re-anima o header que já está 'active'
+                    if (element.classList.contains('active')) {
+                        return;
+                    }
+                    
+                    const elementTop = element.getBoundingClientRect().top;
+                    const revealPoint = windowHeight * revealThreshold;
+
+                    if (elementTop < revealPoint) {
+                        element.classList.add('active');
+                    }
+                });
+            }
+
+            // Ativa a verificação inicial e nos eventos de scroll/redimensionamento
+            checkReveal();
+            window.addEventListener('scroll', checkReveal);
+            window.addEventListener('resize', checkReveal);
+
+        });
+    </script>
+
+</body>
+</html>
